@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostrap Test</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="testando.css">
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        
+</head>
+<body>
+    
+    
+<nav class="navbar navbar-default">
+    
+    <div class="container-fluid justify-content-center">
+        
+        <div class="row">
+            
+            <div class="navbar-header col-sm-12" id="header">
+               <p>BOOTSTRAP</p>
+            </div>
+           
+            <div class="nav-item col-sm-3">
+                <button onclick="mostrar1()"type="button" class="btn btn-outline-dark btn-lg btn-block">O QUE É?</button>
+            </div>
+           
+            <div class="nav-item col-sm-3">
+                <button onclick="mostrar2()"type="button" class="btn btn-outline-dark btn-lg btn-block">PRIMEIROS PASSOS</button>
+            </div>
+           
+            <div class="nav-item col-sm-3">
+                <button onclick="mostrar3()" type="button" class="btn btn-outline-dark btn-lg btn-block">EXEMPLOS</button>
+            </div>
+
+           <div class="nav-item col-sm-3">
+                <button type="button" class="btn btn-outline-dark btn-lg btn-block dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">LINKS ÚTEIS</button>
+                    <div class="dropdown-menu dropdown-menu-right" >
+                        <a class="dropdown-item" href="https://getbootstrap.com.br/docs/4.1/getting-started/download/" target="_blank">DOWNLOAD</a>
+                        <a class="dropdown-item" href="https://getbootstrap.com.br/docs/4.1/getting-started/introduction/" target="_blank">DOCUMENTAÇÃO</a>
+                        <a class="dropdown-item" href="https://getbootstrap.com.br/" target="_blank">SITE OFICIAL</a>
+                    </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+</nav>
+
+<div class="container justify-content-center">
+    <div class="row" id="um">
+        <div class="conteudo col-sm-12" id="um">
+            <h1 class="text-center">O QUE É BOOSTRAP?</h1>
+            <p>Trata-se de um framework front-end que veio para facilitar e agilizar o trabalho, oferecendo padrões para HTML, JavaScript e CSS.</p>
+            <p>Vale lembrar, que é indispensável olhar a documentação. Você pode acessar a nossa aba <b>links úteis</b>.</p>
+            <p>Com o <b>BOOTSTRAP</b> podemos utilizar o sistema de contêiner e grid para criação de interces gráficas responsívas.</p>
+            <div class="text-center">
+            <img src="imgs/grid-system.png" class="img-fluid" alt="Imagem explicando o sistema grid boostrap, na qual utilizar linhas e colunas.">
+            </div>
+            <h6 class="text-center">Sistema grid bootstrap</h6>
+            <p>Cada “Linha” deverá ser subdividida em 12 colunas, e com isso você consegue posicionar os elementos do layout de uma maneira mais harmônica e organizada.</p>
+            <p> * Cada linha é chamada de (row)</p>
+            <p> * Cada coluna possui a nomenclatura (col-) + o tamanho do dispositivo </p>
+            <div class="text-center">
+            <img src="imgs/tabela-tamanhos.png" class="img-fluid" alt="Tabela definindo os tamanhos usados para dispositivos mobiles.">
+            </div> 
+        </div>
+    </div>
+</div>
+
+<div class="container justify-content-center">
+    <div class="row" id="dois">
+        <div class="conteudo col-sm-12" id="dois">
+            <h1 class="text-center">PRIMEIROS PASSOS</h1>
+            <p>Para utilizar faça o download do Bootstrap no site oficial da ferramenta. Você  tambem pode acessar a nossa aba <b>links úteis</b>.</p>
+            <p>Adicione os arquivos “bootstrap.min.css” e “bootstrap.min.js” nas pastas correspondentes 
+            a eles dentro do seu site. Depois, é só chamar o CSS e o JS dentro da tag "head" do HTML.</p>
+            <div class="text-center">
+                <img src="imgs/href.png" class="img-fluid" alt="Imagem referente a como linkar o bootstrap ao html">
+            </div>
+            <h6 class="text-center">Tela linkando bootstrap</h6>
+
+
+
+
+        </div>
+    </div>
+</div> 
+
+<div class="container justify-content-center">   
+    <div class="row" id="tres">
+        <div class="conteudo col-sm-12" id="tres">
+            <h1 class="text-center">EXEMPLOS</h1>
+            <h2 class="text-center">Adicionar Botões utilizando Boostrap</h2>
+            <div class="text-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oEYHYTOtdE4" class="img-fluid" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h2 class="text-center">Dividir Coluna</h2>
+            <div class="text-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2glD3SsAC7o"  class="img-fluid" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+   
+
+    <script>
+        function mostrar1() {
+          var x = document.getElementById("um");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+
+        function mostrar2() {
+          var x = document.getElementById("dois");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+
+        function mostrar3() {
+          var x = document.getElementById("tres");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+
+        </script>
+</body>
+</html>
